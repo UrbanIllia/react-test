@@ -2,6 +2,7 @@
 import Product from "./Product";
 import LoginForm from "./LoginForm/LoginForm.jsx";
 import MyComponent from "./MyComponent/MyComponent.jsx";
+import SearchBar from "./SearchBar/SearchBar.jsx";
 
 export default function App() {
   const handleLogin = (userData) => {
@@ -20,6 +21,7 @@ export default function App() {
       <Product />
       <LoginForm onLogin={handleLogin} />
       <MyComponent onLogin1={handleLogin1} />
+      <SearchBar />
     </div>
   );
 }
