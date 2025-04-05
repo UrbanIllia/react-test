@@ -1,0 +1,24 @@
+.form {
+  padding: 60px;
+  display: flex;
+  flex-direction: row;
+  gap: 30px;
+}
+.inputLogin {
+  width: 170px;
+  height: 35px;
+  background-color: aqua;
+}
+.inputPassword {
+  width: 170px;
+  height: 35px;
+  background-color: bisque;
+}
+.btn {
+  border: 2px solid blue;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 75px;
+  height: 40px;
+}
