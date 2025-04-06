@@ -3,6 +3,7 @@ import Product from "./Product";
 import LoginForm from "./LoginForm/LoginForm.jsx";
 import MyComponent from "./MyComponent/MyComponent.jsx";
 import SearchBar from "./SearchBar/SearchBar.jsx";
+import LangSwitcher from "./MyComponent/LangSwitcher/LangSwitcher.jsx";
 
 export default function App() {
   const handleLogin = (userData) => {
@@ -22,6 +23,7 @@ export default function App() {
       <LoginForm onLogin={handleLogin} />
       <MyComponent onLogin1={handleLogin1} />
       <SearchBar />
+      <LangSwitcher />
     </div>
   );
 }
