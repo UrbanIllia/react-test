@@ -1,17 +1,16 @@
 import css from "./LangSwitcher.module.css";
 import { useId } from "react";
-import { useState } from "react";
 
-const LangSwitcher = () => {
+const LangSwitcher = ({ value, onSelect }) => {
   const SelectId = useId();
-  const { lang, setLang } = useState("uk");
+
   return (
     <div className={css.wrapp}>
       <label htmlFor={SelectId}>Choose language</label>
       <select
         id={SelectId}
-        value={lang}
-        onChange={(evt) => setLang(evt.target.value)}
+        value={value}
+        onChange={(evt) => onSelect(evt.target.value)}
       >
         <option value="en">English</option>
         <option value="uk">Ukrainian</option>

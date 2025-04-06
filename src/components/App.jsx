@@ -4,6 +4,7 @@ import LoginForm from "./LoginForm/LoginForm.jsx";
 import MyComponent from "./MyComponent/MyComponent.jsx";
 import SearchBar from "./SearchBar/SearchBar.jsx";
 import LangSwitcher from "./MyComponent/LangSwitcher/LangSwitcher.jsx";
+import { useState } from "react";
 
 export default function App() {
   const handleLogin = (userData) => {
@@ -12,6 +13,7 @@ export default function App() {
   const handleLogin1 = (userData1) => {
     console.log(userData1);
   };
+  const { lang, setLang } = useState("uk");
   return (
     <div>
       <h1>Best selling</h1>
@@ -23,7 +25,8 @@ export default function App() {
       <LoginForm onLogin={handleLogin} />
       <MyComponent onLogin1={handleLogin1} />
       <SearchBar />
-      <LangSwitcher />
+      <p>Selected language: {lang}</p>
+      <LangSwitcher value={lang} onSelect={setLang} />
     </div>
   );
 }
