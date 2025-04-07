@@ -1,10 +1,14 @@
 import css from "./Filter.module.css";
 
-const Filter = () => {
+const Filter = ({ value, onFilter }) => {
   return (
     <div>
       <p className={css.label}>Search by name</p>
-      <input type="text" />
+      <input
+        type="text"
+        value={value}
+        onChange={(e) => onFilter(e.target.value)}
+      />
     </div>
   );
 };
