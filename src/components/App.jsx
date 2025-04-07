@@ -4,6 +4,8 @@ import LoginForm from "./LoginForm/LoginForm.jsx";
 import MyComponent from "./MyComponent/MyComponent.jsx";
 import SearchBar from "./SearchBar/SearchBar.jsx";
 import LangSwitcher from "./MyComponent/LangSwitcher/LangSwitcher.jsx";
+import Radio from "./Radio/Radio.jsx";
+import CheckBox from "./CheckBox/CheckBox.jsx";
 import { useState } from "react";
 
 export default function App() {
@@ -27,6 +29,8 @@ export default function App() {
       <SearchBar />
       <p>Selected language: {lang}</p>
       <LangSwitcher value={lang} onSelect={setLang} />
+      <Radio />
+      <CheckBox />
     </div>
   );
 }
