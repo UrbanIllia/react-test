@@ -7,6 +7,7 @@ import LangSwitcher from "./MyComponent/LangSwitcher/LangSwitcher.jsx";
 import Radio from "./Radio/Radio.jsx";
 import CheckBox from "./CheckBox/CheckBox.jsx";
 import App1 from "./App1/App1.jsx";
+import FeedbackForm from "./FeedbackForm/FeedbackForm.jsx";
 import { useState } from "react";
 
 export default function App() {
@@ -33,6 +34,7 @@ export default function App() {
       <Radio />
       <CheckBox />
       <App1 />
+      <FeedbackForm />
     </div>
   );
 }
